@@ -77,7 +77,7 @@ numpad_layer {
     &kp GRAVE &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp AMPS      &kp SLASH &kp N7  &kp N8  &kp N9  &kp MINUS &kp BSPC
     &kp LBKT  &kp RBKT  &kp DLLR  &kp PRCNT &kp CARET &kp UNDER     &kp ASTRK &kp N4  &kp N5  &kp N6  &kp PLUS  &kp EQUAL
     &kp LT    &kp GT    &kp EXCL  &kp AT    &kp HASH  &kp QMARK     &kp N0    &kp N1  &kp N2  &kp N3  &kp DOT   &kp BSLH
-                                  &kp LGUI  &kp PIPE  &kp SPACE     &kp RET   &kp N0  &kp DOT
+                                  &kp LGUI  &kp PIPE  &kp &trans    &kp RET   &kp N0  &kp DOT
             >;
         };
     };
