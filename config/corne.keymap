@@ -75,9 +75,9 @@ numpad_layer {
 //                    | GUI |  |  | TOG |   | ENT |  SPC  |  0  |
             bindings = <
     &kp GRAVE &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp AMPS      &kp SLASH &kp N7  &kp N8  &kp N9  &kp MINUS &kp BSPC
-    &kp LBKT  &kp RBKT  &kp DLLR  &kp PRCNT &kp CARET &kp UNDER     &kp ASTRK &kp N4  &kp N5  &kp N6  &kp PLUS  &kp EQUAL
+    &kp LBKT  &kp RBKT  &kp DLLR  &kp PRCNT &kp CARET &kp UNDER     &kp STAR &kp N4  &kp N5  &kp N6  &kp PLUS  &kp EQUAL
     &kp LT    &kp GT    &kp EXCL  &kp AT    &kp HASH  &kp QMARK     &kp N0    &kp N1  &kp N2  &kp N3  &kp DOT   &kp BSLH
-                                  &kp LGUI  &kp PIPE  &kp &none     &kp RET   &kp SPACE  &kp N0
+                                  &kp LGUI  &kp PIPE  &none         &kp RET   &kp SPACE  &kp N0
             >;
         };
     };
