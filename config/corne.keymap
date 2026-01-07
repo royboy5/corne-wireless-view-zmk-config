@@ -9,14 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-        behaviors {
-          tt: tap_toggle {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&tog>;
-          };
+        combos {
+                compatible = "zmk,combos";
+                combo_numpad_toggle {
+                        timeout-ms = <50>;
+                        key-positions = <37 38>;  // Adjust to your preferred keys
+                        bindings = <&tog 3>;
+                };
         };
 
         keymap {
@@ -33,7 +32,7 @@
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-              &kp LGUI &lt 1 SPACE &tt 3 3   &kp RET &mo 2 &kp RALT
+                &kp LGUI &lt 1 SPACE &mo 3   &kp RET &lt 2 SPACE &kp RALT
                         >;
                 };
                 lower_layer {
@@ -77,7 +76,7 @@ numpad_layer {
     &kp GRAVE &kp LPAR  &kp RPAR  &kp LBRC  &kp RBRC  &kp AMPS      &kp SLASH &kp N7  &kp N8  &kp N9  &kp MINUS &kp BSPC
     &kp LBKT  &kp RBKT  &kp DLLR  &kp PRCNT &kp CARET &kp UNDER     &kp STAR &kp N4  &kp N5  &kp N6  &kp PLUS  &kp EQUAL
     &kp LT    &kp GT    &kp EXCL  &kp AT    &kp HASH  &kp QMARK     &kp N0    &kp N1  &kp N2  &kp N3  &kp DOT   &kp BSLH
-                                  &kp LGUI  &kp PIPE  &none         &kp RET   &kp SPACE  &kp N0
+                                  &kp LGUI  &kp PIPE  &tog 3        &kp RET   &kp SPACE  &kp N0
             >;
         };
     };
